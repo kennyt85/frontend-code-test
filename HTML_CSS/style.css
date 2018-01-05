@@ -1,0 +1,58 @@
+header {
+    padding: 10px 20px 10px 20px;
+}
+
+.header-logo-img {
+    height: 70px;
+}
+
+.img-responsive {
+    width: 100%;
+    height: auto;
+}
+
+.logo-with-text {
+    float: right;
+    text-align: center;
+}
+
+.header-ul {
+    float: right;
+}
+
+header ul li {
+    padding-left: 20px;
+}
+
+.contacts-info {
+    background-color: #EEEEEE;
+    padding: 0px 70px 0px 70px;
+}
+
+.search-bar {
+    background-color: #B5AAB0;
+    padding: 10px 70px 0px 70px;
+    width: 100%;
+}
+
+.second-body {
+    padding: 0px 70px 0px 70px;
+}
+
+button {
+    background-color: #217574;
+}
+
+footer {
+    background-color: #2399A5;
+    padding: 0px 70px 0px 70px;
+    color: white;
+}
+
+.footer-logo-img {
+    fill: white;
+}
+
+ul li {
+    display: inline;
+}
