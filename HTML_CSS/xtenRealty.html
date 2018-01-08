@@ -12,23 +12,26 @@
 
     <link rel="stylesheet" type="text/css" href="style.css">
 
+    <script type="text/javascript" src="app.js"></script>
+
     <title>XTen Realty</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-md navbar-light logo-bar">
-        <a class="navbar-brand brand" href="#">
+        <a class="navbar-brand" href="#">
             <img class="sm-hide" src="./Assets/SVGs/TEN-logo.svg">
             <img class="sm-show" src="./Assets/SVGs/TEN-logo-mark.svg">
         </a>
-        <div class="navbar-right narbar-right">
+
+        <div class="navbar-right">
             <div class="header-logos">
                 <div class="logo-with-text">
-                    <img class="header-img" src="./Assets/SVGs/account.svg">
+                    <img class="header-img" src="./Assets/SVGs/header-SVGs/account.svg">
                     <p>Account</p>
                 </div>
                 <div class="logo-with-text">
-                    <img class="header-img" src="./Assets/SVGs/contact.svg">
+                    <img class="header-img" src="./Assets/SVGs/header-SVGs/contact.svg">
                     <p>Contact</p>
                 </div>
             </div>
@@ -38,7 +41,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse header-links" id="navbarNavAltMarkup">
-                <ul class="nav navbar-nav narbar-right">
+                <ul class="nav navbar-nav">
                     <il class="nav-item nav-link" href="#">SEARCH</il>
                     <il class="nav-item nav-link" href="#">COMMUNITIES</il>
                     <il class="nav-item nav-link" href="#">SERVICES</il>
@@ -51,24 +54,31 @@
 
 
     <div class="search-bar">
-        <form class="form-inline">
-            <input class="form-control mr-sm-2" type="search" placeholder="Address, City, Zip, or MLS#" aria-label="Search">
-            <button class="btn btn-primary sm-hide" type="submit">Search</button>
-            <button class="btn btn-primary sm-show" type="submit">
-                <img src="./Assets/SVGs/search.svg">
-            </button>
-        </form>
-        <div class="sm-hide">
-            <a class="navbar-brand">
-                <u>NEW LISTINGS</u>
-            </a>
-            <a class="navbar-brand">
-                <u>OPEN HOUSES</u>
-            </a>
-            <a class="navbar-brand">
-                <u>MAP SEARCH</u>
-            </a>
+        <div class="row">
+            <div class="col-sm-6 col-sx-12">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Address, City, Zip, or MLS#" aria-describedby="basic-addon2">
+                    <button class="btn sm-hide" type="submit">Search</button>
+                    <button class="btn sm-show" type="submit">
+                        <img src="./Assets/SVGs/search.svg">
+                    </button>
+                </div>
+            </div>
+            <div class="col-6 xs-hide se">
+                <a class="navbar-brand">
+                    <u>NEW LISTINGS</u>
+                </a>
+                <a class="navbar-brand">
+                    <u>OPEN HOUSES</u>
+                </a>
+                <a class="navbar-brand">
+                    <u>MAP SEARCH</u>
+                </a>
+            </div>
         </div>
+
+
+
     </div>
 
     <div class="contacts-info">
@@ -85,26 +95,26 @@
                         <small>REALTOR&reg;</small>
                     </p>
                     <button class="btn btn-primary">Contact Me</button>
-                    <img class="social-logo-img" src="./Assets/SVGs/facebook.svg">
-                    <img class="social-logo-img" src="./Assets/SVGs/linkedin.svg">
-                    <img class="social-logo-img" src="./Assets/SVGs/twitter.svg">
-                    <img class="social-logo-img" src="./Assets/SVGs/youtube.svg">
-                    <img class="social-logo-img" src="./Assets/SVGs/instagram.svg">
+                    <img class="social-logo-img" src="./Assets/SVGs/body-SVGs/facebook.svg">
+                    <img class="social-logo-img" src="./Assets/SVGs/body-SVGs/linkedin.svg">
+                    <img class="social-logo-img" src="./Assets/SVGs/body-SVGs/twitter.svg">
+                    <img class="social-logo-img" src="./Assets/SVGs/body-SVGs/youtube.svg">
+                    <img class="social-logo-img" src="./Assets/SVGs/body-SVGs/instagram.svg">
                 </div>
             </div>
             <div class="col-sm-4">
                 <div class="third-col">
                     <label>
-                        <img class="third-col-img" src="./Assets/SVGs/contact.svg"> 530.8302150
+                        <img class="third-col-img" src="./Assets/SVGs/body-SVGs/contact.svg"> 530.8302150
                     </label>
                     <label>
-                        <img class="third-col-img" src="./Assets/SVGs/website.svg"> Visit my website
+                        <img class="third-col-img" src="./Assets/SVGs/body-SVGs/website.svg"> Visit my website
                     </label>
                     <label>
-                        <img class="third-col-img" src="./Assets/SVGs/office.svg"> Denver Office
+                        <img class="third-col-img" src="./Assets/SVGs/body-SVGs/office.svg"> Denver Office
                     </label>
                     <label>
-                        <img class="third-col-img" src="./Assets/SVGs/enewsletter.svg"> eNewsletter Sign Up
+                        <img class="third-col-img" src="./Assets/SVGs/body-SVGs/enewsletter.svg"> eNewsletter Sign Up
                     </label>
                 </div>
             </div>
@@ -114,7 +124,7 @@
 
 
     <div class="second-body">
-        <ul class="nav sm-hide nav-underline">
+        <ul class="nav xs-hide nav-underline">
             <li class=" active ">
                 <a href="# ">About Me</a>
             </li>
@@ -129,7 +139,7 @@
             </li>
         </ul>
 
-        <div class="dropdown sm-show ">
+        <div class="dropdown xs-show ">
             <button class="btn dropdown-toggle dropdown-btn " type="button " id="dropdownMenuButton " data-toggle="dropdown
             " aria-haspopup="true " aria-expanded="false ">
                 About Me
@@ -176,15 +186,15 @@
         <div class="row ">
             <div class="col-sm-6">
                 <label>
-                    <img class="footer-contact-img " src="./Assets/SVGs/contact.svg "> 1-800-234-4567
+                    <img src="./Assets/SVGs/footer-SVGs/contact.svg"> 1-800-234-4567
                 </label>
                 <p>5678 Main Street, Denver, CO 80123</p>
                 <div class="footer-logos">
-                    <img class="social-logo-img " src="./Assets/SVGs/facebook.svg ">
-                    <img class="social-logo-img " src="./Assets/SVGs/linkedin.svg ">
-                    <img class="social-logo-img " src="./Assets/SVGs/twitter.svg ">
-                    <img class="social-logo-img " src="./Assets/SVGs/youtube.svg ">
-                    <img class="social-logo-img " src="./Assets/SVGs/instagram.svg ">
+                    <img class="footer-social-logo-img " src="./Assets/SVGs/footer-SVGs/facebook.svg ">
+                    <img class="footer-social-logo-img " src="./Assets/SVGs/footer-SVGs/linkedin.svg ">
+                    <img class="footer-social-logo-img " src="./Assets/SVGs/footer-SVGs/twitter.svg ">
+                    <img class="footer-social-logo-img " src="./Assets/SVGs/footer-SVGs/youtube.svg ">
+                    <img class="footer-social-logo-img " src="./Assets/SVGs/footer-SVGs/instagram.svg ">
                 </div>
             </div>
             <div class="col-sm-6" align="right">
@@ -202,8 +212,8 @@
                 <p>
                     <small>&copy;2016 TEN Realty. All Rights Reserved.</small>
                 </p>
-                <img class="footer-logo-img " src="./Assets/SVGs/realtor.svg ">
-                <img class="footer-logo-img " src="./Assets/SVGs/equal-housing.svg ">
+                <img class="footer-logo-img " src="./Assets/SVGs/footer-SVGs/realtor.svg ">
+                <img class="footer-logo-img " src="./Assets/SVGs/footer-SVGs/equal-housing.svg ">
             </div>
         </div>
     </footer>
@@ -216,6 +226,8 @@
         crossorigin="anonymous "></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js " integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4 "
         crossorigin="anonymous "></script>
+
+
 </body>
 
 </html>
